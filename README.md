@@ -19,7 +19,7 @@ The service makes use of the Python [apscheduler package](https://apscheduler.re
 been waiting for 5 minutes or longer to be processed.
 
 /src/ordermgmt/demo contains some example insecure code to demonstrate Snyk code scanning via GitHub Actions
-
+ 
 ## Running the Service Locally
 ### Windows
 ```commandline
