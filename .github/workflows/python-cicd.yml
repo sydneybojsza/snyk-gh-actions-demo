@@ -38,9 +38,7 @@ jobs:
       - name: Test with PyTest
         run: |
           pytest src/ordermgmt/tests
-            - name: Run Snyk to check for vulnerabilities
-
-      - name: Code Security Scan with Snyk
+      - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
         continue-on-error: true # To make sure that SARIF upload gets called regardless of scan results
         env:
