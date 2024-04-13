@@ -2,9 +2,15 @@
 ## About the Service
 This is a FastAPI Python microservice written in Python 3.10.
 
+Inside the directory /src/ordermgmt/demo there are some insecure code examples to demonstrate Snyk code scanning via GitHub Actions. These are not used anywhere in the application and have been introduced specifically for this demo.
+
+
+Snyk scanning has also been enabled for the libraries installed via pip, as well as the docker image for the API.
+
+
 The API is a (very simple!) food order management API for a restaurant.
 
-It exposes 3 main endpoints:
+It exposes 3 main endpoints
 
 /customers - endpoint for customers to make/add to orders
 
@@ -17,8 +23,6 @@ It exposes 3 main endpoints:
 
 The service makes use of the Python [apscheduler package](https://apscheduler.readthedocs.io/en/3.x/index.html) which allows it to automatically reject orders that have
 been waiting for 5 minutes or longer to be processed.
-
-/src/ordermgmt/demo contains some example insecure code to demonstrate Snyk code scanning via GitHub Actions
 
 ## Running the Service Locally
 ### Windows
