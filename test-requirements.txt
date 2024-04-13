@@ -1,0 +1,4 @@
+# to run the tests
+pytest
+httpx
+mock

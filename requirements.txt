@@ -1,0 +1,5 @@
+# to run the service
+fastapi
+uvicorn
+apscheduler
+pydantic
