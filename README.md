@@ -23,7 +23,7 @@ The build job will install all dependencies using pip, lint the code and then ru
 Inside of `src/ordermgmt/demo/insecure_demo.py` there are some insecure code examples to demonstrate Snyk code scanning via GitHub Actions. These are not used anywhere in the application and have been introduced specifically for this demo.
 
 The `snyk` job will setup Snyk CLI. Then, using Snyk CLI the action will run `snyk code test` to run a SAST security scan on the source code.
-
+ 
 Next, it builds the docker image for the service, runs container and SCA analysis on the image.
 
 Finally, it will upload the `snyk.sarif` file to GitHub Code Scanning. This step is very powerful as it enables code insights on the vulnerable code. 
