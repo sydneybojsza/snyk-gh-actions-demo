@@ -1,5 +1,6 @@
 # to run the service
 fastapi
+idna==3.7
 uvicorn
 apscheduler
 pydantic
